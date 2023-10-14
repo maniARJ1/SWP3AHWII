@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .großer-button {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .großer-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .ergebnis-anzeige {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ergebnis-anzeige.error {
+    background-color: #ff6b6b;
+  }
+  
