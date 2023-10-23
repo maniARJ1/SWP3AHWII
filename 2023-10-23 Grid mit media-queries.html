@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Allgemeine Stilregeln für das Raster */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Zwei Spalten auf großen Bildschirmen */
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #3498db;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Media Query für Bildschirme mit einer Breite von maximal 768px */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Eine Spalte auf kleineren Bildschirmen */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">My</div>
+        <div class="grid-item">name</div>
+        <div class="grid-item">is</div>
+        <div class="grid-item">Fabian</div>
+    </div>
+</body>
+</html>
+
+  
