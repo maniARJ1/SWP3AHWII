@@ -1,10 +1,10 @@
 const { fakerDE } = require('@faker-js/faker');
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
-const userCountTarget = 10; //10 Benutzer angelegt
-const trackCountTarget = 30; //30 Songs angelegt
-const watchlistCountTarget = 20; //20 Watchlisten angelegt
-const watchlistFillRange = 100; //100 Songs angelegt
+const userCountTarget = 10;
+const trackCountTarget = 50;
+const watchlistCountTarget = 25;
+const watchlistFillRange = 15;
 async function seed() {
     // create users
     const userCountActual = await prisma.benutzer.count();
